@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nosso Universo ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:
+linear-gradient(180deg,#05000d,#12001f,#05000d);
+
+color:white;
+
+overflow-x:hidden;
+
+}
+
+section{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:25px;
+
+flex-direction:column;
+
+position:relative;
+
+}
+
+h1{
+
+font-size:42px;
+
+text-align:center;
+
+background:linear-gradient(90deg,#ffffff,#ffc4f5,#b983ff);
+
+-webkit-background-clip:text;
+
+color:transparent;
+
+}
+
+h2{
+
+font-size:30px;
+
+margin-bottom:20px;
+
+text-align:center;
+
+}
+
+p{
+
+font-size:17px;
+
+line-height:1.8;
+
+text-align:center;
+
+max-width:650px;
+
+color:#ececec;
+
+}
+
+.card{
+
+width:100%;
+
+max-width:420px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:30px;
+
+padding:30px;
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:0 0 40px rgba(167,83,255,.25);
+
+margin:20px;
+
+}
+
+.botao{
+
+margin-top:25px;
+
+padding:16px 35px;
+
+border:none;
+
+border-radius:999px;
+
+background:linear-gradient(90deg,#7d2cff,#ff3fd8);
+
+font-size:17px;
+
+font-weight:bold;
+
+color:white;
+
+cursor:pointer;
+
+transition:.4s;
+
+}
+
+.botao:hover{
+
+transform:scale(1.06);
+
+box-shadow:0 0 25px #b855ff;
+
+}
+
+.hero{
+
+background:
+radial-gradient(circle at top,#6b2dff44,transparent),
+linear-gradient(180deg,#090013,#020006);
+
+}
+
+#contador{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+width:100%;
+
+margin-top:30px;
+
+}
+
+.caixa{
+
+background:#130022;
+
+border-radius:25px;
+
+padding:20px;
+
+border:1px solid rgba(255,255,255,.12);
+
+}
+
+.caixa h3{
+
+font-size:35px;
+
+color:#ffb5ff;
+
+}
+
+.caixa span{
+
+font-size:14px;
+
+color:#ddd;
+
+}
+
+.estrela{
+
+position:fixed;
+
+width:3px;
+
+height:3px;
+
+background:white;
+
+border-radius:50%;
+
+animation:piscar 3s infinite;
+
+}
+
+@keyframes piscar{
+
+50%{
+
+opacity:.2;
+
+transform:scale(.5);
+
+}
+
+}
+
+.foto{
+
+width:100%;
+
+border-radius:22px;
+
+margin-top:20px;
+
+box-shadow:0 0 25px rgba(255,255,255,.15);
+
+}
+
+.float{
+
+position:fixed;
+
+bottom:20px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+background:#2c0d4d;
+
+padding:15px 20px;
+
+border-radius:20px;
+
+font-size:15px;
+
+border:1px solid rgba(255,255,255,.15);
+
+animation:aparece 6s infinite;
+
+z-index:999;
+
+}
+
+@keyframes aparece{
+
+0%,100%{
+
+opacity:0;
+
+transform:translate(-50%,30px);
+
+}
+
+20%,80%{
+
+opacity:1;
+
+transform:translate(-50%,0);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="float" id="mensagem">
+❤️ Você continua sendo minha escolha todos os dias.
+</div>
+
+<section class="hero">
+
+<div class="card">
+
+<h1>Feliz Aniversário de Namoro ❤️</h1>
+
+<p>
+
+Desde
+
+<b>04/01/2026</b>
+
+eu descobri que amar você foi uma das decisões mais bonitas da minha vida.
+
+</p>
+
+<br>
+
+<p>
+
+Esse presente foi feito para você...
+
+Cada página guarda um pedacinho do que eu sinto.
+
+</p>
+
+<button class="botao" onclick="document.getElementById('tempo').scrollIntoView({behavior:'smooth'})">
+
+Começar Nossa História
+
+</button>
+
+</div>
+
+</section>
+
+<section id="tempo">
+
+<div class="card">
+
+<h2>⏳ Nosso Tempo</h2>
+
+<p>
+
+Cada segundo ao seu lado valeu a pena.
+
+</p>
+
+<div id="contador">
+
+<div class="caixa">
+
+<h3 id="dias">0</h3>
+
+<span>Dias</span>
+
+</div>
+
+<div class="caixa">
+
+<h3 id="horas">0</h3>
+
+<span>Horas</span>
+
+</div>
+
+<div class="caixa">
+
+<h3 id="minutos">0</h3>
+
+<span>Minutos</span>
+
+</div>
+
+<div class="caixa">
+
+<h3 id="segundos">0</h3>
+
+<span>Segundos</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+  <section id="inicio">
+
+<div class="card">
+
+<h2>🌌 O começo de tudo</h2>
+
+<p>
+Existem lembranças que parecem simples para os outros, mas para mim carregam um valor enorme.
+Essa foto é uma delas.
+</p>
+
+<img class="foto" src="1000171119.jpg" alt="Nossa lembrança no Roblox">
+
+<p>
+Talvez tenha sido dentro de um jogo, mas o sentimento nunca foi de brincadeira.
+Ali tinha carinho, presença, saudade, vontade de ficar perto e uma conexão que nenhuma distância conseguiu apagar.
+</p>
+
+<p>
+Cada abraço, cada conversa, cada momento bobo e cada risada virou parte da nossa história.
+E eu guardo tudo isso como se fosse um tesouro.
+</p>
+
+<button class="botao" onclick="document.getElementById('paisagem').scrollIntoView({behavior:'smooth'})">
+Continuar
+</button>
+
+</div>
+
+</section>
+
+<section id="paisagem">
+
+<div class="card">
+
+<h2>🌅 A paisagem da nossa história</h2>
+
+<p>
+Essa paisagem me lembra nós dois.
+Nem todo céu nasce claro. Às vezes ele fica pesado, escuro, cansado e silencioso.
+Mas mesmo assim, ele continua bonito.
+</p>
+
+<img class="foto" src="1000171619.jpg" alt="Paisagem especial">
+
+<p>
+A gente também passou por fases assim.
+Teve tristeza, cansaço, alegria, exaustão e dores fortes.
+Mas nenhuma dessas fases apagou o que eu sinto por você.
+</p>
+
+<p>
+Pelo contrário: cada fase me mostrou que amar você também é permanecer,
+esperar, acolher e continuar escolhendo você mesmo quando o dia não está fácil.
+</p>
+
+<button class="botao" onclick="document.getElementById('fases').scrollIntoView({behavior:'smooth'})">
+Ver nossas fases
+</button>
+
+</div>
+
+</section>
+
+<section id="fases">
+
+<div class="card">
+
+<h2>💜 As fases que vivemos</h2>
+
+<p>
+Cada mês, cada momento e cada fase teve um significado.
+Mesmo quando doeu, algo em nós continuou tentando florescer.
+</p>
+
+<div class="fase">
+<span>😢 Tristeza</span>
+<p>
+Quando a tristeza apareceu, eu ainda quis ficar.
+Porque amar você nunca foi só estar nos dias bonitos.
+</p>
+</div>
+
+<div class="fase">
+<span>💤 Cansaço</span>
+<p>
+Quando o cansaço pesou, eu queria ser descanso.
+Queria que você lembrasse que não precisa carregar tudo sozinha.
+</p>
+</div>
+
+<div class="fase">
+<span>✨ Alegria</span>
+<p>
+Quando a alegria vinha, até os momentos pequenos pareciam gigantes.
+Você sempre teve esse poder de deixar meu dia melhor.
+</p>
+</div>
+
+<div class="fase">
+<span>🌙 Exaustão</span>
+<p>
+Na exaustão, eu queria ser silêncio bom, abraço calmo e presença leve.
+</p>
+</div>
+
+<div class="fase">
+<span>❤️ Dores fortes</span>
+<p>
+Nas suas dores, eu nunca quis te julgar.
+Eu queria cuidar, entender e fazer você se sentir segura.
+</p>
+</div>
+
+<button class="botao" onclick="document.getElementById('fotoGaby').scrollIntoView({behavior:'smooth'})">
+Continuar
+</button>
+
+</div>
+
+</section>
+
+<style>
+
+.fase{
+margin-top:18px;
+padding:18px;
+border-radius:22px;
+background:rgba(255,255,255,.07);
+border:1px solid rgba(255,255,255,.13);
+box-shadow:0 0 20px rgba(174,90,255,.12);
+}
+
+.fase span{
+display:inline-block;
+margin-bottom:10px;
+font-weight:700;
+font-size:18px;
+color:#ffd1fb;
+}
+
+.fase p{
+font-size:15px;
+line-height:1.7;
+}
+
+</style> 
+  <section id="fotoGaby">
+
+<div class="card">
+
+<h2>💜 A menina que mudou minha vida</h2>
+
+<p>
+Essa é uma das minhas fotos favoritas.
+Não porque ela é apenas bonita...
+Mas porque ela me lembra a pessoa que eu amo todos os dias.
+</p>
+
+<img
+class="foto"
+src="1000171257.jpg"
+alt="Gaby"
+onclick="mensagemEspecial()"
+>
+
+<p id="textoEspecial">
+
+Quando eu olho para essa foto, eu vejo muito mais do que um rosto bonito.
+
+Eu vejo uma menina forte.
+
+Uma menina que já enfrentou dias difíceis.
+
+Que às vezes fica cansada.
+
+Às vezes sente dores.
+
+Às vezes nem sabe explicar o que está sentindo.
+
+Mesmo assim continua tentando.
+
+E isso me faz admirar você ainda mais.
+
+</p>
+
+<div id="surpresa"
+style="
+display:none;
+margin-top:20px;
+padding:18px;
+border-radius:20px;
+background:#1a082d;
+border:1px solid rgba(255,255,255,.12);
+animation:fadeMensagem 1s;
+">
+
+<h3 style="color:#ffc9ff;">
+✨ Mensagem escondida
+</h3>
+
+<p>
+
+Você nunca precisou ser perfeita para ser a mulher da minha vida.
+
+Seu jeito nunca foi um problema para mim.
+
+Seu jeito faz parte da pessoa incrível que você é.
+
+Mesmo quando você acha que está difícil de amar...
+
+Eu continuo escolhendo você.
+
+Todos os dias.
+
+❤️
+
+</p>
+
+</div>
+
+<br>
+
+<button
+class="botao"
+onclick="document.getElementById('galeria').scrollIntoView({behavior:'smooth'})">
+
+Continuar ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<section id="galeria">
+
+<div class="card">
+
+<h2>📸 Pequenas lembranças</h2>
+
+<p>
+
+Cada imagem guarda uma história.
+
+Cada história guarda um sentimento.
+
+E cada sentimento guarda um pedacinho do meu coração.
+
+</p>
+
+<img
+class="foto"
+src="1000171244.jpg"
+>
+
+<p>
+
+Sempre que vejo essa foto...
+
+Eu lembro das nossas conversas.
+
+Das nossas brincadeiras.
+
+Dos momentos simples.
+
+E percebo que felicidade nunca precisou de muito.
+
+Ela só precisava de você.
+
+</p>
+
+<div
+style="
+margin-top:20px;
+padding:20px;
+background:#12051f;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.10);
+">
+
+<h3
+style="
+margin-bottom:10px;
+color:#ffc8ff;
+">
+
+🌙 O que eu aprendi
+
+</h3>
+
+<p>
+
+Amar também é esperar.
+
+É entender.
+
+É pedir desculpas.
+
+É melhorar.
+
+É crescer.
+
+É continuar.
+
+Mesmo quando tudo parece difícil.
+
+</p>
+
+</div>
+
+<button
+class="botao"
+onclick="document.getElementById('jogo').scrollIntoView({behavior:'smooth'})">
+
+Começar o Mini Jogo 🎮
+
+</button>
+
+</div>
+
+</section>
+
+<style>
+
+@keyframes fadeMensagem{
+
+from{
+
+opacity:0;
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+</style>
+
+<script>
+
+function mensagemEspecial(){
+
+document
+.getElementById("surpresa")
+.style
+.display="block";
+
+}
+
+</script>
+<section id="jogo">
+
+<div class="card">
+
+<h2>🎮 Transformando Memórias</h2>
+
+<p>
+Esse mini jogo é sobre nós dois: pegar uma lembrança difícil e transformar em uma lembrança que ensina, acolhe e fortalece.
+</p>
+
+<div class="progressBox">
+<div id="progressBar"></div>
+</div>
+
+<p id="faseTexto">
+Toque na primeira lembrança para transformar.
+</p>
+
+<div id="gameArea">
+
+<div class="memoryCard" onclick="transformarMemoria(this, 1)">
+<span>😢</span>
+<h3>Tristeza</h3>
+<p>Um dia em que tudo parecia pesado.</p>
+</div>
+
+<div class="memoryCard bloqueado" onclick="transformarMemoria(this, 2)">
+<span>💤</span>
+<h3>Cansaço</h3>
+<p>Um dia em que faltava força até para explicar.</p>
+</div>
+
+<div class="memoryCard bloqueado" onclick="transformarMemoria(this, 3)">
+<span>✨</span>
+<h3>Alegria</h3>
+<p>Um momento simples que fez tudo valer a pena.</p>
+</div>
+
+<div class="memoryCard bloqueado" onclick="transformarMemoria(this, 4)">
+<span>🌙</span>
+<h3>Exaustão</h3>
+<p>Quando o coração só queria silêncio e descanso.</p>
+</div>
+
+<div class="memoryCard bloqueado" onclick="transformarMemoria(this, 5)">
+<span>❤️</span>
+<h3>Dores fortes</h3>
+<p>Quando eu mais queria poder cuidar de você de perto.</p>
+</div>
+
+</div>
+
+<div id="resultadoJogo" class="hiddenResult">
+
+<h3>🏆 Você transformou tudo</h3>
+
+<p>
+Mesmo depois dos dias ruins, nossa história ainda conseguiu guardar amor.
+</p>
+
+<p>
+Isso é o que eu mais admiro em nós: mesmo com tristeza, cansaço, alegria, exaustão e dores fortes, algo em mim continuou dizendo que você vale a pena.
+</p>
+
+<button class="botao" onclick="document.getElementById('cartas').scrollIntoView({behavior:'smooth'})">
+Abrir cartas escondidas 💌
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+.progressBox{
+width:100%;
+height:14px;
+background:rgba(255,255,255,.12);
+border-radius:999px;
+overflow:hidden;
+margin:25px 0;
+border:1px solid rgba(255,255,255,.15);
+}
+
+#progressBar{
+width:0%;
+height:100%;
+background:linear-gradient(90deg,#7d2cff,#ff3fd8,#ffd1fb);
+border-radius:999px;
+transition:1s;
+}
+
+#faseTexto{
+font-size:15px;
+color:#ffd8ff;
+margin-bottom:20px;
+}
+
+#gameArea{
+display:flex;
+flex-direction:column;
+gap:16px;
+width:100%;
+}
+
+.memoryCard{
+padding:20px;
+border-radius:24px;
+background:linear-gradient(135deg,#160024,#250039);
+border:1px solid rgba(255,255,255,.15);
+box-shadow:0 0 25px rgba(152,76,255,.18);
+transition:.4s;
+cursor:pointer;
+position:relative;
+overflow:hidden;
+}
+
+.memoryCard span{
+font-size:36px;
+display:block;
+margin-bottom:8px;
+}
+
+.memoryCard h3{
+font-size:20px;
+color:#ffc9ff;
+margin-bottom:8px;
+}
+
+.memoryCard p{
+font-size:14px;
+line-height:1.6;
+}
+
+.memoryCard.transformada{
+background:linear-gradient(135deg,#5f22ff,#ff49d1);
+box-shadow:0 0 35px rgba(255,86,224,.45);
+transform:scale(1.02);
+}
+
+.memoryCard.bloqueado{
+opacity:.35;
+filter:grayscale(1);
+pointer-events:none;
+}
+
+.hiddenResult{
+display:none;
+margin-top:25px;
+padding:22px;
+border-radius:25px;
+background:rgba(255,255,255,.09);
+border:1px solid rgba(255,255,255,.15);
+animation:finalGame 1s ease;
+}
+
+.hiddenResult h3{
+color:#ffd1fb;
+font-size:24px;
+margin-bottom:12px;
+}
+
+@keyframes finalGame{
+from{
+opacity:0;
+transform:translateY(25px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.particle{
+position:fixed;
+width:8px;
+height:8px;
+background:#ffb6ff;
+border-radius:50%;
+pointer-events:none;
+animation:particleMove 1.2s forwards;
+z-index:9999;
+}
+
+@keyframes particleMove{
+to{
+transform:translateY(-120px) scale(0);
+opacity:0;
+}
+}
+</style>
+
+<script>
+let faseAtual = 1;
+
+const textosFases = {
+1: "A tristeza virou uma prova de que mesmo nos dias difíceis, eu ainda escolhi você.",
+2: "O cansaço virou cuidado, porque você merece descanso e não cobrança.",
+3: "A alegria virou lembrança, porque cada sorriso seu vale muito para mim.",
+4: "A exaustão virou abrigo, porque eu queria ser paz quando tudo pesasse.",
+5: "As dores fortes viraram promessa: eu nunca quero te abandonar nas fases difíceis."
+};
+
+function transformarMemoria(card, fase){
+if(fase !== faseAtual){
+return;
+}
+
+card.classList.add("transformada");
+card.innerHTML = `
+<span>💜</span>
+<h3>Memória transformada</h3>
+<p>${textosFases[fase]}</p>
+`;
+
+criarParticulas();
+
+faseAtual++;
+
+let progresso = ((faseAtual - 1) / 5) * 100;
+document.getElementById("progressBar").style.width = progresso + "%";
+
+if(faseAtual <= 5){
+document.getElementById("faseTexto").innerText =
+"Agora toque na próxima fase para continuar transformando nossa história.";
+
+const cards = document.querySelectorAll(".memoryCard");
+cards[faseAtual - 1].classList.remove("bloqueado");
+}else{
+document.getElementById("faseTexto").innerText =
+"Você chegou ao final do jogo. Todas as fases foram transformadas.";
+document.getElementById("resultadoJogo").style.display = "block";
+}
+}
+
+function criarParticulas(){
+for(let i=0;i<18;i++){
+const p = document.createElement("div");
+p.classList.add("particle");
+p.style.left = Math.random() * window.innerWidth + "px";
+p.style.top = Math.random() * window.innerHeight + "px";
+p.style.background = i % 2 === 0 ? "#ffb6ff" : "#9d6bff";
+document.body.appendChild(p);
+
+setTimeout(()=>{
+p.remove();
+},1200);
+}
+}
+</script>
+<section id="cartas">
+
+<div class="card">
+
+<h2>💌 Cartas que meu coração escreveu</h2>
+
+<p>
+Cada envelope guarda uma parte do que eu sempre quis que você soubesse.
+Toque em cada um deles.
+</p>
+
+<div class="letters">
+
+<div class="letter" onclick="abrirCarta(this,
+'💜 Carta 1','Você nunca precisou esconder quem você é para ser amada. Eu amo seu jeito, inclusive as partes que você acha difíceis.')">
+📩
+</div>
+
+<div class="letter" onclick="abrirCarta(this,
+'🌙 Carta 2','Mesmo quando você está cansada ou exausta, eu continuo vendo a menina incrível que me fez apaixonar todos os dias.')">
+📩
+</div>
+
+<div class="letter" onclick="abrirCarta(this,
+'❤️ Carta 3','Se um dia você cair, eu volto para buscar você. Se o mundo inteiro desistir, eu continuo aqui.')">
+📩
+</div>
+
+<div class="letter" onclick="abrirCarta(this,
+'✨ Carta 4','Obrigado por todas as risadas, pelas conversas e até pelos dias difíceis. Eles também construíram nossa história.')">
+📩
+</div>
+
+<div class="letter" onclick="abrirCarta(this,
+'💍 Carta Final','Gaby, eu escolheria você mil vezes. Mesmo em outra vida, eu procuraria você novamente.')">
+📩
+</div>
+
+</div>
+
+<div id="painelCarta">
+
+<h3 id="tituloCarta">
+Abra uma carta
+</h3>
+
+<p id="textoCarta">
+
+❤️
+
+</p>
+
+</div>
+
+<br>
+
+<button class="botao"
+onclick="document.getElementById('promessa').scrollIntoView({behavior:'smooth'})">
+
+Minha Promessa ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<section id="promessa">
+
+<div class="card">
+
+<h2>🤍 Minha Promessa</h2>
+
+<p class="promessaTexto">
+
+Eu prometo continuar escolhendo você.
+
+Mesmo quando existir tristeza.
+
+Mesmo quando existir cansaço.
+
+Mesmo quando existir exaustão.
+
+Mesmo quando existirem dores.
+
+Porque meu amor nunca dependeu de dias perfeitos.
+
+Ele depende apenas de uma pessoa.
+
+Você.
+
+</p>
+
+<p class="promessaTexto">
+
+Se algum dia a vida nos colocar em caminhos difíceis...
+
+Eu volto.
+
+Se você se perder...
+
+Eu procuro você.
+
+Se você cansar...
+
+Eu espero.
+
+Porque amar você nunca foi uma obrigação.
+
+Sempre foi a minha vontade.
+
+❤️
+
+</p>
+
+<button class="botao"
+onclick="document.getElementById('escrever').scrollIntoView({behavior:'smooth'})">
+
+Continuar
+
+</button>
+
+</div>
+
+</section>
+
+<style>
+
+.letters{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:20px;
+
+}
+
+.letter{
+
+height:90px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:45px;
+
+border-radius:22px;
+
+background:linear-gradient(135deg,#2a003f,#4d0d7c);
+
+cursor:pointer;
+
+transition:.4s;
+
+box-shadow:0 0 20px rgba(168,87,255,.25);
+
+}
+
+.letter:hover{
+
+transform:scale(1.08);
+
+}
+
+#painelCarta{
+
+margin-top:25px;
+
+padding:20px;
+
+border-radius:22px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.12);
+
+min-height:180px;
+
+}
+
+#tituloCarta{
+
+color:#ffd4ff;
+
+margin-bottom:12px;
+
+}
+
+.promessaTexto{
+
+margin-top:20px;
+
+line-height:1.9;
+
+font-size:16px;
+
+}
+
+.floatHeart{
+
+position:fixed;
+
+font-size:20px;
+
+pointer-events:none;
+
+animation:subirHeart 4s linear forwards;
+
+opacity:.8;
+
+z-index:999;
+
+}
+
+@keyframes subirHeart{
+
+0%{
+
+transform:translateY(0);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-250px);
+
+opacity:0;
+
+}
+
+}
+
+</style>
+
+<script>
+
+function abrirCarta(card,titulo,texto){
+
+document.getElementById("tituloCarta").innerHTML=titulo;
+
+document.getElementById("textoCarta").innerHTML=texto;
+
+card.style.background="linear-gradient(135deg,#ff49d1,#7d2cff)";
+
+for(let i=0;i<15;i++){
+
+let heart=document.createElement("div");
+
+heart.className="floatHeart";
+
+heart.innerHTML="💜";
+
+heart.style.left=Math.random()*window.innerWidth+"px";
+
+heart.style.bottom="0px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+
+heart.remove();
+
+},4000);
+
+}
+
+}
+
+const mensagens=[
+
+"❤️ Você continua sendo meu lugar favorito.",
+
+"🌙 Mesmo cansada, você continua linda.",
+
+"✨ Eu escolheria você novamente.",
+
+"💜 Seu jeito é uma das coisas que mais amo.",
+
+"🤍 Obrigado por existir.",
+
+"💍 Nosso amor vale cada segundo."
+
+];
+
+let indice=0;
+
+setInterval(()=>{
+
+document.getElementById("mensagem").innerHTML=mensagens[indice];
+
+indice++;
+
+if(indice>=mensagens.length){
+
+indice=0;
+
+}
+
+},5000);
+
+</script> 
+<section id="escrever">
+
+<div class="card">
+
+<h2>📝 Escreva o que você sente</h2>
+
+<p>
+Gaby, esse espaço é seu. Escreva o que estiver no seu coração.
+O que você sente importa, merece carinho e merece ser guardado com cuidado.
+</p>
+
+<textarea id="textoGaby" placeholder="Escreva aqui o que você sente..."></textarea>
+
+<button class="botao" onclick="salvarMensagemGaby()">
+Guardar no coração 💜
+</button>
+
+<div id="mensagemGuardada" class="mensagemGuardada">
+Nenhuma mensagem guardada ainda.
+</div>
+
+<button class="botao" onclick="document.getElementById('final').scrollIntoView({behavior:'smooth'})">
+Ir para o final ✨
+</button>
+
+</div>
+
+</section>
+
+<section id="final" class="hero">
+
+<div class="card">
+
+<h2>💍 Nosso final é só o começo</h2>
+
+<p>
+Essas fotos não são só imagens.
+Elas são pedaços da nossa história.
+</p>
+
+<div class="mosaico">
+<img src="1000171119.jpg">
+<img src="1000171244.jpg">
+<img src="1000171257.jpg">
+<img src="1000171619.jpg">
+</div>
+
+<p>
+Obrigado por cada conversa, cada risada, cada ligação, cada momento no jogo,
+cada paisagem que virou lembrança e cada fase que a gente superou.
+</p>
+
+<p>
+Eu amo você nas fases boas e nas difíceis.
+Eu amo você quando tudo está leve e quando tudo pesa.
+Eu amo você quando você sorri e também quando só precisa de acolhimento.
+</p>
+
+<h1 class="finalLove">
+Gaby, eu escolheria você mil vezes. ❤️
+</h1>
+
+<p>
+Com todo meu carinho,<br>
+<b>Rafihx</b>
+</p>
+
+</div>
+
+</section>
+
+<style>
+textarea{
+width:100%;
+min-height:180px;
+margin-top:20px;
+padding:18px;
+border-radius:22px;
+background:#12001f;
+color:white;
+border:1px solid rgba(255,255,255,.18);
+outline:none;
+font-size:15px;
+resize:none;
+}
+
+textarea::placeholder{
+color:#bca6d9;
+}
+
+.mensagemGuardada{
+margin-top:22px;
+padding:20px;
+border-radius:22px;
+background:rgba(255,255,255,.08);
+border:1px solid rgba(255,255,255,.14);
+color:#ffd9ff;
+line-height:1.7;
+word-wrap:break-word;
+}
+
+.mosaico{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin:25px 0;
+}
+
+.mosaico img{
+width:100%;
+height:135px;
+object-fit:cover;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.18);
+box-shadow:0 0 18px rgba(255,255,255,.12);
+}
+
+.finalLove{
+font-size:30px;
+margin:25px 0;
+}
+
+@media(max-width:380px){
+h1{
+font-size:34px;
+}
+h2{
+font-size:25px;
+}
+p{
+font-size:15px;
+}
+.card{
+padding:22px;
+}
+.mosaico img{
+height:115px;
+}
+}
+</style>
+
+<script>
+function salvarMensagemGaby(){
+const texto = document.getElementById("textoGaby").value.trim();
+const box = document.getElementById("mensagemGuardada");
+
+if(texto === ""){
+box.innerHTML = "Escreva algo antes de guardar, meu amor. 💜";
+return;
+}
+
+localStorage.setItem("mensagemDaGaby", texto);
+
+box.innerHTML =
+"💌 Mensagem guardada com carinho:<br><br>" + texto;
+
+criarParticulas();
+}
+
+const textoSalvo = localStorage.getItem("mensagemDaGaby");
+
+if(textoSalvo){
+document.getElementById("mensagemGuardada").innerHTML =
+"💌 Mensagem guardada com carinho:<br><br>" + textoSalvo;
+}
+
+function atualizarContador(){
+const inicio = new Date("2026-01-04T00:00:00");
+const agora = new Date();
+const diferenca = agora - inicio;
+
+const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+const horas = Math.floor((diferenca / (1000 * 60 * 60)) % 24);
+const minutos = Math.floor((diferenca / (1000 * 60)) % 60);
+const segundos = Math.floor((diferenca / 1000) % 60);
+
+document.getElementById("dias").innerText = dias;
+document.getElementById("horas").innerText = horas;
+document.getElementById("minutos").innerText = minutos;
+document.getElementById("segundos").innerText = segundos;
+}
+
+setInterval(atualizarContador,1000);
+atualizarContador();
+
+for(let i=0;i<70;i++){
+let star=document.createElement("div");
+star.className="estrela";
+star.style.left=Math.random()*100+"vw";
+star.style.top=Math.random()*100+"vh";
+star.style.animationDelay=Math.random()*3+"s";
+document.body.appendChild(star);
+}
+</script>
+
+</body>
+</html>
